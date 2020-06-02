@@ -1,11 +1,27 @@
 import React from "react"
+import { graphql } from "gatsby"
 
-const Template = () => {
+const Template = props => {
   return (
-    <div>
-      <h1>Template</h1>
-    </div>
+    <header>
+      <h2>Template</h2>
+    </header>
   )
 }
 
 export default Template
+
+export const query = graphql`
+  query($slug: String) {
+    educationJson(slug: { eq: $slug }) {
+      title
+      description
+      items {
+        name
+        degree
+        score
+        url
+      }
+    }
+  }
+`
