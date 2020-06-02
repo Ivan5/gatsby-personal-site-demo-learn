@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 const Template = props => {
   const pageData = props.data.educationJson
@@ -8,6 +8,9 @@ const Template = props => {
     <>
       <header className="py-12 border-purple-500 border-solid border-t-8">
         <div className="max-w-4xl mx-auto">
+          <Link to="/" className="uppercase underline text-pink-500">
+            Regresar al inicio
+          </Link>
           <h2 className="capitalize text-6xl font-bold">{pageData.title}</h2>
           <p className="page-xl">{pageData.description}</p>
         </div>
