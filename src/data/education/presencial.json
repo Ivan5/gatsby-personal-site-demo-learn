@@ -1,0 +1,17 @@
+{
+  "slug": "presencial",
+  "title": "Formación academica",
+  "description": "Formación académica, grados de estudios e instituciones a las que asistí",
+  "items": [
+    {
+      "name": "Universidad Politecnica del Estado de Morelos",
+      "degree": "Ing. en Informática",
+      "score": "85"
+    },
+    {
+      "name": "CBTIS 166",
+      "degree": "Técnico en computación",
+      "score": "xx"
+    }
+  ]
+}
